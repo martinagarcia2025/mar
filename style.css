@@ -1,0 +1,65 @@
+/* Fondo con textura y centrado de la tarjeta */
+body {
+  margin: 0;
+  padding: 40px;
+  font-family: 'Poppins', sans-serif;
+
+  /* Fondo con la textura */
+  background-image: url('imagenes/tu textura.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  /* Flexbox para centrar */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* altura completa de la ventana */
+}
+
+/* Título */
+h2 {
+  font-weight: 700;
+}
+
+/* Párrafos */
+p {
+  font-weight: 300;
+}
+
+/* Tarjeta */
+.card {
+  background-color: rgb(255, 0, 119);
+  max-width: 400px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  color: white; /* para que el texto se vea bien sobre el fondo */
+}
+
+/* Imagen perfil dentro de la tarjeta */
+.card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Botón */
+button {
+  background-color: #000000;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #444444;
+}
